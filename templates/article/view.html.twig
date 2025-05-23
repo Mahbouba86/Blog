@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block body %}
+    <h1>{{ article.title }}</h1>
+    {{dump(article)}}
+
+    <a href="{{ path('articles') }}">Retour </a>
+{% endblock %}
