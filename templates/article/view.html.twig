@@ -3,8 +3,19 @@
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block body %}
-    <h1>{{ article.title }}</h1>
-    {{dump(article)}}
+    <h1>{{ article.title }} ({{ article.isPublished ? 'Publié' : 'Brouillon' }})</h1>
 
-    <a href="{{ path('articles') }}">Retour </a>
+    {{ dump(article) }}
+
+    <a href="{{ path('articles')}}">Retour aux articles</a>
+    <a href="{{ path('article_edit', {'slug': article.slug}) }}">Modifier</a>
+    <a href="{{ path('article_publish', { 'slug': article.slug }) }}">{{ article.isPublished ? 'Brouillon' : 'Publier'  }}</a>
+    <a href="{{ path('article_archive', {'slug': article.slug}) }}">Archiver</a>
+    <form action="#" method="post">
+        <button type="submit">Supprimer</button>
+    </form>
+
 {% endblock %}
+
+
+

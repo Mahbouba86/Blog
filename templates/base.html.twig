@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
@@ -11,7 +12,16 @@
         {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}
 </head>
+
 <body>
-{% block body %}{% endblock %}
+{% for label, message in app.flashes %}
+{% for message in message %}
+<div class="flash-{{ label }}">
+    {{ message }}
+</div>
+{% endfor %}
+{% endfor %}
+
+{% block body %} {% endblock %}
 </body>
 </html>

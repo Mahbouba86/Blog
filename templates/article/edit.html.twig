@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block body %}
+    <h1>modification de {{ article.title }}</h1>
+
+    {{form(articleForm)}}
+
+    <a href="{{ path('articles' ,{'slug': article.slug})}}">Retour à l'article </a>
+{% endblock %}

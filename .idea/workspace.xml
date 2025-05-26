@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2ba1d6d-a2b7-4af4-b3e0-798f29752c9d" name="Changes" comment="Création pagination">
-      <change afterPath="$PROJECT_DIR$/templates/article/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/article/view.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/paginator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/view.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +29,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Mahbouba86"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Mahbouba86/Blog.git",
+    "accountId": "550cf65f-5c0b-4669-bed6-5f61a0977806"
+  }
+}]]></component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
@@ -182,7 +196,7 @@
     "PHPUnit.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "pagination",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/mahbouba/Desktop/symfony/blog",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -226,7 +240,7 @@
       <workItem from="1747743904937" duration="37000" />
       <workItem from="1747743950988" duration="6137000" />
       <workItem from="1747752593860" duration="17969000" />
-      <workItem from="1747988296514" duration="16393000" />
+      <workItem from="1747988296514" duration="34102000" />
     </task>
     <task id="LOCAL-00001" summary="Création pagination">
       <option name="closed" value="true" />
@@ -236,7 +250,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747992054954</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Création pagination">
+      <option name="closed" value="true" />
+      <created>1748009752069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748009752069</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Création pagination">
+      <option name="closed" value="true" />
+      <created>1748009778439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748009778439</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,5 +286,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Création pagination" />
     <option name="LAST_COMMIT_MESSAGE" value="Création pagination" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/ArticleController.php</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

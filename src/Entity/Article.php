@@ -19,25 +19,25 @@ class Article
     private ?int $id = null;
 
     #[ORM\Column(length: 100)]
-    #[Assert\Length(min: 2, max: 100, message: 'Le titre contient au minimum {{ min }} caractères et au maximum {{ max }} caractères')]
+    #[Assert\Length(min: 2, max: 100, minMessage: 'Le titre contient au minimum {{ min }} caractères et au maximum {{ max }} caractères')]
     private ?string $title = null;
 
     #[ORM\Column(length: 255)]
-    #[Assert\Length(max: 255, message: '{{ max }} caractères maximum')]
+    #[Assert\Length(max: 255, minMessage: '{{ max }} caractères maximum')]
     #[Assert\Regex(pattern: '/^[a-z0-9-]+$/')]
     private ?string $slug = null;
 
     #[ORM\Column(length: 255)]
-    #[Assert\Length(max: 255, message: '{{ max }} caractères maximum')]
+    #[Assert\Length(max: 255, minMessage: '{{ max }} caractères maximum')]
     #[Assert\Regex(pattern: '/\.(jpg|jpeg|png|webp)$/')]
     private ?string $image = 'default.png';
 
     #[ORM\Column(length: 255, nullable: true)]
-    #[Assert\Length(max: 255, message: '{{ max }} caractères maximum')]
+    #[Assert\Length(max: 255, minMessage: '{{ max }} caractères maximum')]
     private ?string $keywords = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    #[Assert\Length(max: 255, message: '{{ max }} caractères maximum')]
+    #[Assert\Length(max: 255, minMessage: '{{ max }} caractères maximum')]
     private ?string $description = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
