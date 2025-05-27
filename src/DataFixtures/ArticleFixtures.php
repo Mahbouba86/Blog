@@ -8,9 +8,13 @@ use App\Entity\User;
 use Doctrine\Persistence\ObjectManager;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class ArticleFixtures extends Fixture implements DependentFixtureInterface
 {
+    public function __construct(
+        private readonly UserPasswordHasherInterface $hasher
+    ){}
     public function load(ObjectManager $manager): void
     {
         $faker = Factory::create('fr_FR');
@@ -18,8 +22,8 @@ class ArticleFixtures extends Fixture implements DependentFixtureInterface
         // Admin
         $admin = new User();
         $admin
-            ->setEmail($faker->email())
-            ->setPassword($faker->password())
+            ->setEmail('admin@admin.fr')
+            ->setPassword($this->hasher->hashPassword($admin, 'admin'))
             ->setWarningCount(0)
             ->setRoles(['ROLE_ADMIN'])
         ;

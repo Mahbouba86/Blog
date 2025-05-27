@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Création d'un article{% endblock %}
+
+{% block body %}
+    <h1>Création d'un article</h1>
+
+    {{ form(articleForm) }}
+
+    <a href="{{ path('articles') }}">Retour aux articles</a>
+
+{% endblock %}

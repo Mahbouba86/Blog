@@ -1,21 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ article.title }}{% endblock %}
+{% block title %}
+    {{ article.title }}
+{% endblock %}
 
 {% block body %}
-    <h1>{{ article.title }} ({{ article.isPublished ? 'Publié' : 'Brouillon' }})</h1>
+    <h1>
+        {{ article.title }}
+        ({{ article.isPublished ? 'Publié' : 'Brouillon' }}{{ article.isArchived ? ' • Archivé' : '' }})
+    </h1>
 
     {{ dump(article) }}
 
     <a href="{{ path('articles')}}">Retour aux articles</a>
     <a href="{{ path('article_edit', {'slug': article.slug}) }}">Modifier</a>
-    <a href="{{ path('article_publish', { 'slug': article.slug }) }}">{{ article.isPublished ? 'Brouillon' : 'Publier'  }}</a>
-    <a href="{{ path('article_archive', {'slug': article.slug}) }}">Archiver</a>
-    <form action="#" method="post">
+    <a href="{{ path('article_publish', { 'slug': article.slug }) }}">{{ article.isPublished ? 'Mettre en brouillon' : 'Publier'  }}</a>
+    <a href="{{ path('article_archive', { 'slug': article.slug }) }}">{{ article.isArchived ? 'Désarchiver' : 'Archiver'  }}</a>
+
+    <form action="{{ path('article_delete', { 'slug': article.slug }) }}" method="post" onsubmit="return confirm('Supprimer sûr ???');">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token('article_delete')}}">
         <button type="submit">Supprimer</button>
     </form>
 
 {% endblock %}
-
-
-

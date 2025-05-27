@@ -4,13 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ba1d6d-a2b7-4af4-b3e0-798f29752c9d" name="Changes" comment="Création pagination">
+    <list default="true" id="a2ba1d6d-a2b7-4af4-b3e0-798f29752c9d" name="Changes" comment="ajout des fonctionnalités  Modifier Publier Archiver">
+      <change afterPath="$PROJECT_DIR$/.symfony.local.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/article/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/BlockFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/BlockFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/article/view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/view.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +193,8 @@
       <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfonycasts/tailwind-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/ux-icons" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -209,8 +225,8 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "hsqldb",
-      "sqlite"
+      "sqlite",
+      "hsqldb"
     ]
   }
 }]]></component>
@@ -240,7 +256,7 @@
       <workItem from="1747743904937" duration="37000" />
       <workItem from="1747743950988" duration="6137000" />
       <workItem from="1747752593860" duration="17969000" />
-      <workItem from="1747988296514" duration="34102000" />
+      <workItem from="1747988296514" duration="55746000" />
     </task>
     <task id="LOCAL-00001" summary="Création pagination">
       <option name="closed" value="true" />
@@ -266,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748009778439</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ajout des fonctionnalités  Modifier Publier Archiver">
+      <option name="closed" value="true" />
+      <created>1748267620493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748267620493</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,14 +309,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Création pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Création pagination" />
+    <MESSAGE value="ajout des fonctionnalités  Modifier Publier Archiver" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout des fonctionnalités  Modifier Publier Archiver" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/Controller/ArticleController.php</url>
-          <line>18</line>
+          <line>25</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -277,6 +277,18 @@
             "./templates/base.html.twig"
         ]
     },
+    "symfony/ux-icons": {
+        "version": "2.25",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.17",
+            "ref": "803a3bbd5893f9584969ab8670290cdfb6a0a5b5"
+        },
+        "files": [
+            "./assets/icons/symfony.svg"
+        ]
+    },
     "symfony/ux-turbo": {
         "version": "2.25",
         "recipe": {
@@ -309,6 +321,18 @@
         "files": [
             "./config/packages/web_profiler.yaml",
             "./config/routes/web_profiler.yaml"
+        ]
+    },
+    "symfonycasts/tailwind-bundle": {
+        "version": "0.10",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "0.8",
+            "ref": "4ea7c9488fdce8943520daf3fdc31e93e5b59c64"
+        },
+        "files": [
+            "./config/packages/symfonycasts_tailwind.yaml"
         ]
     },
     "twig/extra-bundle": {

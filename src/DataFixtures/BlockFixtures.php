@@ -18,7 +18,7 @@ class BlockFixtures extends Fixture implements DependentFixtureInterface
 
         // Récupération des articles nouvellement créés
         $articles = [];
-        for ($i=0; $i < 1000; $i++) {
+        for ($i=0; $i < 100; $i++) {
             $articles[] = $this->getReference('ARTICLE_' . $i, Article::class);
         }
 

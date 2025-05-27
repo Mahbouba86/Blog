@@ -6,9 +6,14 @@ use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker\Factory;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class UserFixtures extends Fixture
 {
+
+    public function __construct(
+        private readonly UserPasswordHasherInterface $hasher
+    ){}
     public function load(ObjectManager $manager): void
     {
         $faker = Factory::create('fr_FR');
@@ -17,7 +22,7 @@ class UserFixtures extends Fixture
             $user = new User();
             $user
                 ->setEmail($faker->email())
-                ->setPassword($faker->password())
+                ->setPassword($this->hasher->hashPassword($user, 'admin'))
                 ->setWarningCount($faker->randomElement([0, 1, 2, 3]))
                 ->setIsBanned($faker->boolean(80))
                 ->setIsActive($faker->boolean(10))

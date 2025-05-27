@@ -7,7 +7,7 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: CommentRepository::class)]
-#[ORM\HasLifecycleCallbacks] // Gestion auto des évènements par Doctrine
+#[ORM\HasLifecycleCallbacks]
 class Comment
 {
     #[ORM\Id]
@@ -23,26 +23,22 @@ class Comment
     private ?string $content = null;
 
     #[ORM\Column]
-    private ?\DateTimeImmutable $created_at = null;
+    private ?\DateTimeImmutable $createdAt = null;
 
-    #[ORM\Column]
-    private ?bool $is_moderated = null;
+    #[ORM\Column(name: "is_moderated", type: 'boolean')]
+    private bool $isModerated = false;
 
-    #[ORM\Column]
-    private ?bool $is_published = null;
+    #[ORM\Column(name: "is_published", type: 'boolean')]
+    private bool $isPublished = false;
 
     #[ORM\ManyToOne(inversedBy: 'comments')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Article $article = null;
 
-    /**
-     * Les évènements du cycle de vie de l'entité
-     * La mise à jour des dates de création de l'entité
-     */
-    #[ORM\PrePersist] // Premier enregistrement d'un objet de l'entité
+    #[ORM\PrePersist]
     public function setCreatedAtValue(): void
     {
-        $this->created_at = new \DateTimeImmutable();
+        $this->createdAt = new \DateTimeImmutable();
     }
 
     public function getId(): ?int
@@ -76,36 +72,36 @@ class Comment
 
     public function getCreatedAt(): ?\DateTimeImmutable
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
-    public function setCreatedAt(\DateTimeImmutable $created_at): static
+    public function setCreatedAt(\DateTimeImmutable $createdAt): static
     {
-        $this->created_at = $created_at;
+        $this->createdAt = $createdAt;
 
         return $this;
     }
 
-    public function isModerated(): ?bool
+    public function isModerated(): bool
     {
-        return $this->is_moderated;
+        return $this->isModerated;
     }
 
-    public function setIsModerated(bool $is_moderated): static
+    public function setIsModerated(bool $isModerated): static
     {
-        $this->is_moderated = $is_moderated;
+        $this->isModerated = $isModerated;
 
         return $this;
     }
 
-    public function isPublished(): ?bool
+    public function isPublished(): bool
     {
-        return $this->is_published;
+        return $this->isPublished;
     }
 
-    public function setIsPublished(bool $is_published): static
+    public function setIsPublished(bool $isPublished): static
     {
-        $this->is_published = $is_published;
+        $this->isPublished = $isPublished;
 
         return $this;
     }
