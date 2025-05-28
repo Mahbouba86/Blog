@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-    <script src="https//cdn.tailwindcss.com"></script>
+    <title>{% block title %}{% endblock %} • Road to Symfony</title>
+    <link rel="icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Questrial&display=swap" rel="stylesheet">
     {% block stylesheets %}
     {% endblock %}
 
@@ -14,17 +16,12 @@
     {% endblock %}
 </head>
 
-<body class="bg-slate-50">
-{% for label, message in app.flashes %}
-{% for message in message %}
-<div class="flash-{{ label }}">
-    {{ message }}
-</div>
- {% endfor %}
-{% endfor %}
-<main class="container">
+<body>
+ {% include 'components/flash.html.twig' %}
+ {% include 'components/nav.html.twig' %}
+ <main class="container mx-auto px-4">
     {% block body %}{% endblock %}
-
-</main>
+       </main>
+ {% include 'components/footer.html.twig' %}
 </body>
 </html>

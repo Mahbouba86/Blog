@@ -4,27 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ba1d6d-a2b7-4af4-b3e0-798f29752c9d" name="Changes" comment="ajout des fonctionnalités  Modifier Publier Archiver">
-      <change afterPath="$PROJECT_DIR$/.symfony.local.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/article/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="a2ba1d6d-a2b7-4af4-b3e0-798f29752c9d" name="Changes" comment="création partie authentification et installation tailwind css">
+      <change afterPath="$PROJECT_DIR$/templates/components/flash.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/components/footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/components/nav.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/BlockFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/BlockFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/view.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +187,7 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfonycasts/tailwind-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/ux-icons" />
+      <path value="$PROJECT_DIR$/vendor/symfonycasts/reset-password-bundle" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -202,6 +195,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2xJE4ynwIueYYP5zTaVzOPDMCGE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -230,6 +226,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mahbouba\Desktop\symfony\blog\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
@@ -256,7 +257,7 @@
       <workItem from="1747743904937" duration="37000" />
       <workItem from="1747743950988" duration="6137000" />
       <workItem from="1747752593860" duration="17969000" />
-      <workItem from="1747988296514" duration="55746000" />
+      <workItem from="1747988296514" duration="66095000" />
     </task>
     <task id="LOCAL-00001" summary="Création pagination">
       <option name="closed" value="true" />
@@ -290,7 +291,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748267620493</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="création partie authentification et installation tailwind css">
+      <option name="closed" value="true" />
+      <created>1748357799045</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748357799045</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +319,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Création pagination" />
     <MESSAGE value="ajout des fonctionnalités  Modifier Publier Archiver" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout des fonctionnalités  Modifier Publier Archiver" />
+    <MESSAGE value="création partie authentification et installation tailwind css" />
+    <option name="LAST_COMMIT_MESSAGE" value="création partie authentification et installation tailwind css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

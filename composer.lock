@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c1157cd5aeb60de0f3ecdd902a95105",
+    "content-hash": "b011779fab1c98251b091340ababa8b6",
     "packages": [
         {
             "name": "composer/semver",
@@ -6422,16 +6422,16 @@
         },
         {
             "name": "symfony/stimulus-bundle",
-            "version": "v2.25.0",
+            "version": "v2.25.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stimulus-bundle.git",
-                "reference": "520ba148f3b87b137fc3763f81a2fc3c43badabc"
+                "reference": "5a6aef0646119530da862d5afa1386ade3b9ed43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/520ba148f3b87b137fc3763f81a2fc3c43badabc",
-                "reference": "520ba148f3b87b137fc3763f81a2fc3c43badabc",
+                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/5a6aef0646119530da862d5afa1386ade3b9ed43",
+                "reference": "5a6aef0646119530da862d5afa1386ade3b9ed43",
                 "shasum": ""
             },
             "require": {
@@ -6471,7 +6471,7 @@
                 "symfony-ux"
             ],
             "support": {
-                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.25.0"
+                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.25.2"
             },
             "funding": [
                 {
@@ -6487,7 +6487,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-06T04:28:20+00:00"
+            "time": "2025-05-19T11:54:27+00:00"
         },
         {
             "name": "symfony/stopwatch",
@@ -7677,6 +7677,54 @@
                 }
             ],
             "time": "2025-04-04T10:10:11+00:00"
+        },
+        {
+            "name": "symfonycasts/reset-password-bundle",
+            "version": "v1.23.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SymfonyCasts/reset-password-bundle.git",
+                "reference": "bde42fe5956e0cd523931da886ee41ab660c45b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SymfonyCasts/reset-password-bundle/zipball/bde42fe5956e0cd523931da886ee41ab660c45b2",
+                "reference": "bde42fe5956e0cd523931da886ee41ab660c45b2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=8.1.10",
+                "symfony/config": "^5.4 | ^6.0 | ^7.0",
+                "symfony/dependency-injection": "^5.4 | ^6.0 | ^7.0",
+                "symfony/deprecation-contracts": "^2.2 | ^3.0",
+                "symfony/http-kernel": "^5.4 | ^6.0 | ^7.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.0",
+                "doctrine/doctrine-bundle": "^2.8",
+                "doctrine/orm": "^2.13",
+                "symfony/framework-bundle": "^5.4 | ^6.0 | ^7.0",
+                "symfony/phpunit-bridge": "^5.4 | ^6.0 | ^7.0",
+                "symfony/process": "^6.4 | ^7.0 | ^7.1",
+                "symfonycasts/internal-test-helpers": "dev-main"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "SymfonyCasts\\Bundle\\ResetPassword\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Symfony bundle that adds password reset functionality.",
+            "support": {
+                "issues": "https://github.com/SymfonyCasts/reset-password-bundle/issues",
+                "source": "https://github.com/SymfonyCasts/reset-password-bundle/tree/v1.23.1"
+            },
+            "time": "2024-12-09T19:04:36+00:00"
         },
         {
             "name": "symfonycasts/tailwind-bundle",

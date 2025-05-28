@@ -2,9 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-input {
-    @apply p-2 rounded-lg border border-slate-200 shadow-sm mt-2 mb-4;
-}
 body {
-    background-color: red;
+    font-family: 'Questrial', sans-serif;
+    @apply text-lg text-slate-700 bg-slate-50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Funnel Display', serif;
+    @apply font-bold text-slate-900;
+}
+
+a { @apply text-violet-500 hover:text-violet-700 underline; }
+
+a[target="_blank"]::after {}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    @apply w-full rounded-lg border border-slate-200 px-3 py-2 text-slate-700 placeholder-slate-400
+    focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-slate-200 mb-4;
+
+}
+
+button[type="submit"] {
+    @apply bg-violet-500 text-white rounded-full px-3 py-2 hover:bg-violet-400 transition duration-300 ease-in-out;
 }
