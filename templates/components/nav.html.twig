@@ -1,0 +1,16 @@
+<nav class="">
+    <div class="">
+    <a href="/" class="">{{ ux_icon('lucide:newspaper', { class: 'text-5xl h-8 w-8'}) }}</a>
+    </div>
+
+    <div class="">
+        <a href="" class="">Nouveautés </a>
+        <a href="" class="">Catégories </a>
+        {% if app.user %}
+        <a href="#" class="">Déconnexion </a>
+        {% else %}
+         <a href="#" class="">{{  ux_icon('lucide:user-circle', { class:'h-4 w-4'})}} </a>
+        <a href="#" class="">S'inscrire </a>
+        {% endif %}
+    </div>
+</nav>

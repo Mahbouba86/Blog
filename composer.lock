@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b011779fab1c98251b091340ababa8b6",
+    "content-hash": "725c841c3d9c558dd643c1d57721ee56",
     "packages": [
         {
             "name": "composer/semver",
@@ -4401,6 +4401,76 @@
             "time": "2025-04-04T09:50:51+00:00"
         },
         {
+            "name": "symfony/mailtrap-mailer",
+            "version": "v7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mailtrap-mailer.git",
+                "reference": "e73c9cf79de06e5d220a40e578e8e12b7ab1710d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mailtrap-mailer/zipball/e73c9cf79de06e5d220a40e578e8e12b7ab1710d",
+                "reference": "e73c9cf79de06e5d220a40e578e8e12b7ab1710d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "psr/event-dispatcher": "^1",
+                "symfony/mailer": "^7.2"
+            },
+            "conflict": {
+                "symfony/webhook": "<7.2"
+            },
+            "require-dev": {
+                "symfony/http-client": "^6.4|^7.0",
+                "symfony/webhook": "^7.2"
+            },
+            "type": "symfony-mailer-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mailer\\Bridge\\Mailtrap\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Mailtrap Mailer Bridge",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/mailtrap-mailer/tree/v7.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-09-30T20:51:55+00:00"
+        },
+        {
             "name": "symfony/messenger",
             "version": "v7.2.6",
             "source": {
@@ -7170,6 +7240,101 @@
             "time": "2025-04-07T13:54:07+00:00"
         },
         {
+            "name": "symfony/ux-live-component",
+            "version": "v2.25.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/ux-live-component.git",
+                "reference": "79e8cc179eb21119547c492ae21e4bf529ac1a15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/ux-live-component/zipball/79e8cc179eb21119547c492ae21e4bf529ac1a15",
+                "reference": "79e8cc179eb21119547c492ae21e4bf529ac1a15",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/deprecation-contracts": "^2.5|^3.0",
+                "symfony/property-access": "^5.4.5|^6.0|^7.0",
+                "symfony/property-info": "^5.4|^6.0|^7.0",
+                "symfony/stimulus-bundle": "^2.9",
+                "symfony/ux-twig-component": "^2.25.1",
+                "twig/twig": "^3.10.3"
+            },
+            "conflict": {
+                "symfony/config": "<5.4.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.0",
+                "doctrine/collections": "^1.6.8|^2.0",
+                "doctrine/doctrine-bundle": "^2.4.3",
+                "doctrine/orm": "^2.9.4",
+                "doctrine/persistence": "^2.5.2|^3.0",
+                "phpdocumentor/reflection-docblock": "5.x-dev",
+                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
+                "symfony/expression-language": "^5.4|^6.0|^7.0",
+                "symfony/form": "^5.4|^6.0|^7.0",
+                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
+                "symfony/options-resolver": "^5.4|^6.0|^7.0",
+                "symfony/phpunit-bridge": "^6.1|^7.0",
+                "symfony/security-bundle": "^5.4|^6.0|^7.0",
+                "symfony/serializer": "^5.4|^6.0|^7.0",
+                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
+                "symfony/uid": "^5.4|^6.0|^7.0",
+                "symfony/validator": "^5.4|^6.0|^7.0",
+                "zenstruck/browser": "^1.2.0",
+                "zenstruck/foundry": "^2.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/ux",
+                    "name": "symfony/ux"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\UX\\LiveComponent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Live components for Symfony",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "components",
+                "symfony-ux",
+                "twig"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/ux-live-component/tree/v2.25.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-05-19T11:54:27+00:00"
+        },
+        {
             "name": "symfony/ux-turbo",
             "version": "v2.25.0",
             "source": {
@@ -7266,6 +7431,89 @@
                 }
             ],
             "time": "2025-04-26T09:38:11+00:00"
+        },
+        {
+            "name": "symfony/ux-twig-component",
+            "version": "v2.25.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/ux-twig-component.git",
+                "reference": "d20da25517fc09d147897d02819a046f0a0f6735"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/ux-twig-component/zipball/d20da25517fc09d147897d02819a046f0a0f6735",
+                "reference": "d20da25517fc09d147897d02819a046f0a0f6735",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
+                "symfony/deprecation-contracts": "^2.2|^3.0",
+                "symfony/event-dispatcher": "^5.4|^6.0|^7.0",
+                "symfony/property-access": "^5.4|^6.0|^7.0",
+                "twig/twig": "^3.10.3"
+            },
+            "conflict": {
+                "symfony/config": "<5.4.0"
+            },
+            "require-dev": {
+                "symfony/console": "^5.4|^6.0|^7.0",
+                "symfony/css-selector": "^5.4|^6.0|^7.0",
+                "symfony/dom-crawler": "^5.4|^6.0|^7.0",
+                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
+                "symfony/phpunit-bridge": "^6.0|^7.0",
+                "symfony/stimulus-bundle": "^2.9.1",
+                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
+                "symfony/webpack-encore-bundle": "^1.15"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/ux",
+                    "name": "symfony/ux"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\UX\\TwigComponent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Twig components for Symfony",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "components",
+                "symfony-ux",
+                "twig"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/ux-twig-component/tree/v2.25.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-05-20T13:06:01+00:00"
         },
         {
             "name": "symfony/validator",

@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ba1d6d-a2b7-4af4-b3e0-798f29752c9d" name="Changes" comment="création partie authentification et installation tailwind css">
-      <change afterPath="$PROJECT_DIR$/templates/components/flash.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/footer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/nav.html.twig" afterDir="false" />
+    <list default="true" id="a2ba1d6d-a2b7-4af4-b3e0-798f29752c9d" name="Changes" comment="gérer le  mot de passe (oublié)">
+      <change afterPath="$PROJECT_DIR$/templates/article/search.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/importmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/importmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/nav.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +188,9 @@
       <path value="$PROJECT_DIR$/vendor/symfonycasts/tailwind-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/ux-icons" />
       <path value="$PROJECT_DIR$/vendor/symfonycasts/reset-password-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailtrap-mailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/ux-live-component" />
+      <path value="$PROJECT_DIR$/vendor/symfony/ux-twig-component" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -216,7 +219,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "php.override.implement.member.chooser.php.doc": "NONE",
-    "settings.editor.selected.configurable": "configurable.group.database.main",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -257,7 +260,7 @@
       <workItem from="1747743904937" duration="37000" />
       <workItem from="1747743950988" duration="6137000" />
       <workItem from="1747752593860" duration="17969000" />
-      <workItem from="1747988296514" duration="66095000" />
+      <workItem from="1747988296514" duration="83655000" />
     </task>
     <task id="LOCAL-00001" summary="Création pagination">
       <option name="closed" value="true" />
@@ -299,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748357799045</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gérer le  mot de passe (oublié)">
+      <option name="closed" value="true" />
+      <created>1748428494807</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748428494807</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +331,8 @@
     <MESSAGE value="Création pagination" />
     <MESSAGE value="ajout des fonctionnalités  Modifier Publier Archiver" />
     <MESSAGE value="création partie authentification et installation tailwind css" />
-    <option name="LAST_COMMIT_MESSAGE" value="création partie authentification et installation tailwind css" />
+    <MESSAGE value="gérer le  mot de passe (oublié)" />
+    <option name="LAST_COMMIT_MESSAGE" value="gérer le  mot de passe (oublié)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
